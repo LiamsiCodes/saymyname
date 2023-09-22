@@ -22,8 +22,8 @@ export default function Home({products}) {
 
    <div className='py-12 px-6 mx-auto container xl:max-w-screen-xl '>
     <div className='grid gap-8 grid-cols-1 md:grid-cols-3 lg:grid-cols-4'>
-    {products.map((pro)=>(
-       <Cards pro={pro}/>
+    {products.map((pro,id)=>(
+       <Cards key={id} pro={pro}/>
        ))}
        </div>
    </div>
